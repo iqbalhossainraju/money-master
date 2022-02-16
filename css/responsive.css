@@ -1,0 +1,20 @@
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  input {
+    height: 100%;
+    width: 80px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  input {
+    height: 100%;
+    width: 150px;
+  }
+}

@@ -13,10 +13,96 @@
     />
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <!-- title -->
     <title>Account of Money</title>
   </head>
   <body>
+    <!-- Header Start -->
+    <header>
+      <h1 class="container text-center py-5 font-teal-600">Account of Money</h1>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Section Start -->
+    <main class="container">
+      <section>
+        <div class="row">
+          <!-- image -->
+          <div class="col-lg-6 col-md-6 col-12">
+            <img class="img-fluid" src="./images/images-01.jpg" alt="" />
+          </div>
+          <!-- image end-->
+
+          <!-- cash counting area start-->
+          <div class="col-lg-6 col-md-6 col-12 p-4 account-section">
+            <!-- Total Income Input Area-->
+            <h5 class="text-center mb-4">Income</h5>
+            <div class="row">
+              <div class="col-6">
+                <span>Income:</span>
+              </div>
+              <div class="col-6">
+                <input class="p-1" type="text" placeholder="12000" required />
+              </div>
+            </div>
+            <!-- Total Income Input Area End-->
+            <h5 class="text-center py-4">Expenses</h5>
+            <!-- food input -->
+            <div class="row">
+              <div class="col-6">
+                <span>Food:</span>
+              </div>
+              <div class="col-6">
+                <input class="p-1" type="text" placeholder="3000" required />
+              </div>
+            </div>
+            <!-- rent input -->
+            <div class="row py-5">
+              <div class="col-6">
+                <span>Rent:</span>
+              </div>
+              <div class="col-6">
+                <input class="p-1" type="text" placeholder="5000" required />
+              </div>
+            </div>
+            <!-- clothes input -->
+            <div class="row">
+              <div class="col-6">
+                <span>Clothes:</span>
+              </div>
+              <div class="col-6">
+                <input class="p-1" type="text" placeholder="2000" required />
+              </div>
+            </div>
+
+            <!-- Calculation Button -->
+            <button
+              id="calculation-btn"
+              class="btn btn-primary text-center mt-3"
+            >
+              Calculate
+            </button>
+
+            <!-- Total Counting Area -->
+            <div class="text-center mt-5">
+              <!-- Total Expenses -->
+              <p>
+                Total Expenses:
+                <span id="total-expenses">00</span>
+              </p>
+              <!-- Total Balance -->
+              <p>
+                Balance:
+                <span id="total-balance">00</span>
+              </p>
+            </div>
+          </div>
+          <!-- cash counting area end-->
+        </div>
+      </section>
+    </main>
+    <!-- Main Section End -->
     <!-- Bootstrap Script -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
