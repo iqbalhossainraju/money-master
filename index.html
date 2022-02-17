@@ -48,7 +48,7 @@
                   class="p-1"
                   type="text"
                   placeholder="Ex.12000"
-                  required
+                  required;
                 />
               </div>
             </div>
@@ -65,7 +65,7 @@
                   class="p-1"
                   type="text"
                   placeholder="Ex.3000"
-                  required
+                  required;
                 />
               </div>
             </div>
@@ -80,7 +80,7 @@
                   class="p-1"
                   type="text"
                   placeholder="Ex.5000"
-                  required
+                  required;
                 />
               </div>
             </div>
@@ -95,14 +95,14 @@
                   class="p-1"
                   type="text"
                   placeholder="Ex.2000"
-                  required
+                  required;
                 />
               </div>
             </div>
 
             <!-- Calculation Button -->
             <button
-              id="calculation-btn"
+              onclick="calculate()"
               class="btn btn-primary text-center mt-3"
             >
               Calculate
@@ -121,6 +121,38 @@
                 <span id="total-balance">00</span>
               </p>
             </div>
+
+            <!-- Saving Update Area Start-->
+            <div class="text-center py-3">
+              <div>
+                <span>Save:</span>
+                <input
+                  id="savings-input"
+                  class="p-2"
+                  type="text"
+                  placeholder="Ex.20"
+                />
+                %
+                <button onclick="savings()" class="btn btn-primary">
+                  Save
+                </button>
+              </div>
+
+              <!-- Update Svings -->
+              <div class="mt-4">
+                <p>
+                  Saving Amount:
+                  <span id="savings-amount">00</span>
+                </p>
+                <!-- Total Balance -->
+                <p>
+                  Remaining Balance:
+                  <span id="remaining-balance">00</span>
+                </p>
+              </div>
+              <!-- Update Svings -->
+            </div>
+            <!-- Saving Update Area End-->
           </div>
           <!-- cash counting area end-->
         </div>
