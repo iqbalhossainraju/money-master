@@ -47,10 +47,19 @@ function savings() {
 
     const totalBalance = document.getElementById('total-balance');
 
-    let calculation = savings / 100 * income;
-    savingsAmount.innerText = calculation;
-
-    const remainingBalance = document.getElementById('remaining-balance');
-    let remainingValue = totalBalance.innerText - savingsAmount.innerText;
-    remainingBalance.innerText =remainingValue;
+    if(savings < 0){
+        alert("Please enter possitive value")
+    }
+    else{
+        let calculation = savings / 100 * income;
+        if(totalBalance.innerText > savingsAmount.innerText){
+            savingsAmount.innerText = calculation;
+            const remainingBalance = document.getElementById('remaining-balance');
+            let remainingValue = totalBalance.innerText - savingsAmount.innerText;
+            remainingBalance.innerText =remainingValue;
+        }
+        else{
+            alert("Please Enter possitive value")
+        }
+    }
 }
